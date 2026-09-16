@@ -1,0 +1,25 @@
+Package: pidigits
+Type: Package
+Title: Arbitrary Precision Digits of Pi with Memoisation
+Version: 0.1.0
+Authors@R: 
+    person("J Kyle", "Armstrong", email = "ComputeGate@gmail.com", role = c("aut", "cre"),
+           comment = c(
+               ORCID = "0000-0002-4269-0121",
+               affiliation = ""
+           ))
+Description: Provides a memoised helper function 'pi_digits' that returns 
+    the first n digits of pi using arbitrary precision arithmetic via Rmpfr. 
+    Results are cached for efficiency. Includes tests and a vignette.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    Rmpfr,
+    memoise
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0
